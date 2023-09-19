@@ -67,18 +67,23 @@ z-index:10;
   margin-top:17px;
   float:right;
   color:#424874;
-
+  display:block;
 }
+
 .right-div{
-  top:60px;
-  left:-20px;
+  
+  
   position:fixed;
-  height:100vh;
   width:100%;
-  justify-content:baseline;
-  flex-direction:column;
+  height:100%;
+  background:#424874;
+  top:60px;
+  left:-100%;
   text-align:center;
-  background-color:#424874;
+  flex-direction:column;
+  
+  
+  transition: all .5s;
  }
 .menu-item{
   color:#F4EEFF;
