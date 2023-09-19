@@ -75,7 +75,10 @@ ul{
 
 
 @media screen and (min-width:363px) and (max-width:767px){
-
+nav{
+  width:100vw;
+  padding-right:50px;
+}
   .menu-icon{
   display:block;
  }  
@@ -116,4 +119,4 @@ ul{
 }
 
 
-/*SLidesss*/
+
