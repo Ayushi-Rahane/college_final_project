@@ -25,6 +25,9 @@ nav{
   min-width:170px;
   height:60px;
 }
+.menu-icon{
+  visibility:hidden;
+}
 .right-div{
   height:60px;
 
@@ -54,8 +57,16 @@ nav{
   opacity:0.4;
 }
 
-@media screen and (min-width:393px) and (max-width:767px){
-  nav{
-    height:200px;
-  }
+@media screen and (min-width:324px) and (max-width:767px){
+.menu-icon{
+  visibility:visible;
+  font-size:2em;
+  margin-top:12px;
+  margin-left:180px;
+  color:#424874;
+
+}
+.right-div{
+  visibility:hidden;
+}
 }
