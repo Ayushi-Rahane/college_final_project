@@ -7,8 +7,9 @@ nav{
   justify-content:baseline;
   align-items:center;
   height:60px;
-  background-color:DCD6F7
+  background-color:DCD6F7;
 /*   background-color:#424874; */
+z-index:10;
 }
 .left-div{
   height:60px;
@@ -58,15 +59,35 @@ nav{
 }
 
 @media screen and (min-width:324px) and (max-width:767px){
+  
 .menu-icon{
+  margin-right:22px;
   visibility:visible;
   font-size:2em;
-  margin-top:12px;
-  margin-left:180px;
+  margin-top:17px;
+  float:right;
   color:#424874;
 
 }
 .right-div{
-  visibility:hidden;
+  top:60px;
+  left:-20px;
+  position:fixed;
+  height:100vh;
+  width:100%;
+  justify-content:baseline;
+  flex-direction:column;
+  text-align:center;
+  background-color:#424874;
+ }
+.menu-item{
+  color:#F4EEFF;
+  font-weight:900;
+  line-height:5em;
+  
+}
+.menu-item:hover{
+  background-color:#F4EEFF;
+  color:#424874;
 }
 }
