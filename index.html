@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body onload="ss(-1);">
     <!--Navigation and logo-->
     <nav>
       <div class="left-div">
@@ -37,11 +37,39 @@
     </nav>
 
 <!--Home/Front Page-->
-<div>
-  <img src="front-img/1.png" class="front-img1">
-  <h1 class="txt1">
-    Innovation is Passion...
-  </h1>
-</div>
+<p align="center"><img id="DisplaySlide" src="" alt="Slide" class="front-img"></p>
+
+
   </body>
+  <script>
+    let MySlides = new Array('front-img/1.png', 'front-img/2.png', 'front-img/3.png', 'front-img/4.png');
+let Slide = 0;
+
+function ss(sn) {
+  // Increment or decrement Slide by sn
+  Slide = Slide + sn;
+
+  // If Slide exceeds the length of MySlides, reset to 0
+  if (Slide > MySlides.length - 1) {
+    Slide = 0;
+  }
+
+  // If Slide is less than 0, set to the last image index
+  if (Slide < 0) {
+    Slide = MySlides.length - 1;
+  }
+
+  // Display the current image
+  document.getElementById('DisplaySlide').src = MySlides[Slide];
+}
+
+// Call the ss function to display the initial image
+ss(0);
+
+// Set an interval to automatically change the slide every 2 seconds
+setInterval(function () {
+  ss(1);
+}, 4000);
+
+   </script> 
 </html>
