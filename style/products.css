@@ -50,7 +50,9 @@
         align-items: center;
     }
     .product-title{
+        font-size:20px;
      margin-right:70px;
+     margin-bottom:60px;
     }
     .product-img{
         width:170px;
