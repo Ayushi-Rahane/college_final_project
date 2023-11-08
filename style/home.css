@@ -47,13 +47,16 @@
 @media screen and (min-width: 350px) and (max-width: 767px) {
 
 .home-outer-div{
-    height:343px;
+    min-height:263px;
+    height:352px;
 }    
 .home-img-div{
+    min-width:321px;
     width:511px;
 }
 .front-img{
     display:flex;
+    min-width:321px;
     width:511px;
 }
 }
