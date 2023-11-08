@@ -173,7 +173,7 @@ ul {
   height: 60px;
   list-style-type: none;
   display: flex;
-  min-width: 567px;
+  min-width: 167px;
   padding-top: 32px;
   justify-content: space-around; /* Center the menu items horizontally */
 }
