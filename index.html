@@ -43,12 +43,30 @@
 
      <button class="left-arrow-btn"> <img  class="left-arrow" src="front-img/left_arrow.png"> </button>
     
-    <img class="front-img" src="front-img/1.png">
+    <img id="front-img" class="front-img" src="front-img/1.png">
     <button class="right-arrow-btn" align="center" ><img align="center"  class="right-arrow" src="front-img/Right_arrow copy.png"></button>
   </div>
 </div>
 
   </body>
+  <script>
+    //Home-page slideshow
+
+    var front_img = ["front-img/1.png","front-img/2.png","front-img/3.png"];
+    var i=0;
+
+    function chg_img(){
+      i++;
+       if(i>=front_img.length){
+          i=0;
+       }
+       else if(i<0)
+       {
+        i=front_img.length-1;       
+       }
+       document.getElementById("front-img").src=front_img[i];
+    }
+    setInterval(chg_img,1000);
 
    </script> 
 </html>
