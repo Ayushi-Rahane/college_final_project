@@ -1,0 +1,50 @@
+.title-div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.title{
+    font-family:  'Alegreya', serif;
+    color:#424874;
+    font-weight:800;
+    font-size:5rem;
+    
+}
+.service-item-outer-div{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:3px;
+    justify-content: center;
+      align-items: center;
+}
+.service-img{
+    width:300px;
+    margin:20px;
+}
+
+.service-name{
+    text-align:center;
+    color:#424874;
+    font-weight:600;
+    font-style: 'Inclusive Sans', sans-serif;
+}
+
+.service-info{
+    text-align:center;
+    color:darkcyan;
+    font-style: 'Inclusive Sans', sans-serif;
+}
+
+.service-enquire-div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.enquiry-link{
+    width:50px;
+    padding:10px 20px 10px 20px;
+    border-radius:2em;
+    background-color:#424874;
+    color:aliceblue
+}
