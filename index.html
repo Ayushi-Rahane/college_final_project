@@ -37,39 +37,18 @@
     </nav>
 
 <!--Home/Front Page-->
-<p align="center"><img id="DisplaySlide" src="" alt="Slide" class="front-img"></p>
 
+<div class="home-outer-div">
+  <div  class="homer-inner-div">
+
+     <button class="left-arrow-btn"> <img  class="left-arrow" src="front-img/left_arrow.png"> </button>
+    
+    <img class="front-img" src="front-img/1.png">
+    <button class="right-arrow-btn" align="center" ><img align="center"  class="right-arrow" src="front-img/Right_arrow copy.png"></button>
+  </div>
+</div>
 
   </body>
-  <script>
-    let MySlides = new Array('front-img/1.png', 'front-img/2.png', 'front-img/3.png', 'front-img/4.png');
-let Slide = 0;
-
-function ss(sn) {
-  // Increment or decrement Slide by sn
-  Slide = Slide + sn;
-
-  // If Slide exceeds the length of MySlides, reset to 0
-  if (Slide > MySlides.length - 1) {
-    Slide = 0;
-  }
-
-  // If Slide is less than 0, set to the last image index
-  if (Slide < 0) {
-    Slide = MySlides.length - 1;
-  }
-
-  // Display the current image
-  document.getElementById('DisplaySlide').src = MySlides[Slide];
-}
-
-// Call the ss function to display the initial image
-ss(0);
-
-// Set an interval to automatically change the slide every 2 seconds
-setInterval(function () {
-  ss(1);
-}, 4000);
 
    </script> 
 </html>

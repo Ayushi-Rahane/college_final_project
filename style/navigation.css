@@ -135,6 +135,7 @@ nav {
   width: 100vw;
   background-color: #DCD6F7;
   z-index: 10;
+  border-bottom: 2px solid #E3E8ED; 
 }
 
 .left-div {
@@ -174,7 +175,8 @@ ul {
   list-style-type: none;
   display: flex;
   min-width: 167px;
-  padding-top: 32px;
+  padding-top: 39px;
+  padding-right:174px;
   justify-content: space-around; /* Center the menu items horizontally */
 }
 
