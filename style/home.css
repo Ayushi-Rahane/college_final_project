@@ -47,16 +47,26 @@
 @media screen and (min-width: 350px) and (max-width: 767px) {
 
 .home-outer-div{
-    min-height:263px;
-    height:352px;
+    height:263px;
+    
 }    
 .home-img-div{
-    min-width:321px;
-    width:511px;
+    width:321px;
 }
 .front-img{
     display:flex;
-    min-width:321px;
-    width:511px;
+    width:321px;
+}
+.right-arrow-btn, .left-arrow-btn{
+    top:199px;
+}
+.right-arrow-btn{
+    right:20px;
+}
+.left-arrow-btn{
+    left:20px;
+}
+.left-arrow, .right-arrow{
+    width:20px;
 }
 }
