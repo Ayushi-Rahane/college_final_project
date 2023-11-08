@@ -41,10 +41,10 @@
 <div class="home-outer-div">
   <div  class="homer-inner-div">
 
-     <button class="left-arrow-btn"> <img  class="left-arrow" src="front-img/left_arrow.png"> </button>
+     <button onclick="chg_img(-1);" class="left-arrow-btn"> <img  class="left-arrow" src="front-img/left_arrow.png"> </button>
     
     <img id="front-img" class="front-img" src="front-img/1.png">
-    <button class="right-arrow-btn" align="center" ><img align="center"  class="right-arrow" src="front-img/Right_arrow copy.png"></button>
+    <button onclick="chg_img(1);"  class="right-arrow-btn" align="center" ><img align="center"  class="right-arrow" src="front-img/Right_arrow copy.png"></button>
   </div>
 </div>
 
@@ -55,8 +55,8 @@
     var front_img = ["front-img/1.png","front-img/2.png","front-img/3.png"];
     var i=0;
 
-    function chg_img(){
-      i++;
+    function chg_img(obj){
+      i=i+obj;
        if(i>=front_img.length){
           i=0;
        }
@@ -66,7 +66,9 @@
        }
        document.getElementById("front-img").src=front_img[i];
     }
-    setInterval(chg_img,1000);
+    setInterval(function () {
+    chg_img(1);
+  },5000);
 
    </script> 
 </html>
