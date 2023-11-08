@@ -22,7 +22,7 @@
 .right-arrow-btn, .left-arrow-btn{
     position:absolute;
     top:314px;
-    background-color:#DCD6F7;
+    background-color:transparent;
     border:none;
 }
 
