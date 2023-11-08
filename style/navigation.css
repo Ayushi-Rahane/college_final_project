@@ -182,7 +182,8 @@ ul {
 
 .menu-item {
   color: #424874;
-  font-family: Inclusive Sans;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight:300;
   padding: 12px;
   border-radius: 20px;
   transition: background-color 0.3s, color 0.3s, border-radius 0.3s, opacity 0.3s;
