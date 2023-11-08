@@ -39,3 +39,23 @@
     color:darkcyan;
     font-style: 'Inclusive Sans', sans-serif;
 }
+
+@media screen and (min-width: 350px) and (max-width: 767px) {
+    .product-item-div{
+        grid-template-rows: 400px 500px;
+    }
+    .product-item1-div{
+        grid-template-columns:100px 300px;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-title{
+     margin-right:70px;
+    }
+    .product-img{
+        width:170px;
+    }
+    .product-info-div{
+        text-align:center;
+    }
+}
