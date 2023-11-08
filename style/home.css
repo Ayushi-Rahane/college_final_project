@@ -14,6 +14,7 @@
 }
 .front-img{
     width:900px;
+    min-width:100px;
 }
 .left-arrow, .right-arrow{
     width:40px;
@@ -41,4 +42,18 @@
 }
 .left-arrow-btn{
     left:38px;
+}
+
+@media screen and (min-width: 350px) and (max-width: 767px) {
+
+.home-outer-div{
+    height:343px;
+}    
+.home-img-div{
+    width:511px;
+}
+.front-img{
+    display:flex;
+    width:511px;
+}
 }
