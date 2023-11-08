@@ -228,6 +228,7 @@ ul {
     color: #F4EEFF;
     font-weight: 900;
     line-height: 5em;
+    padding: 0px;
     display: flex; /* Add display: flex; */
     align-items: center; /* Vertically center the text */
     justify-content: center; /* Horizontally center the text */
