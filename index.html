@@ -126,16 +126,43 @@
 </div>
 
 <!--Contact us Section-->
-<div>
-  <div class="title-div">
-    <h1 class="title-hidden">Contact Us</h1>
-    </div>
+<div class="title-div">
+  <h1 class="title-hidden">Contact Us</h1>
+  </div>
+<div class="contact-us-div-hidden">
+  
+    
   <div class="social-media-logo-div">
-   <i id="logo" class="fa-brands fa-whatsapp"></i>
-    <i class="fa-brands fa-linkedin-in"></i>
+   <i  class="fa-brands fa-whatsapp"></i>
+    <span class="mid-logo"><i class="fa-brands fa-linkedin-in"></i></span>
     <i class="fa-brands fa-facebook"></i>
   </div>
-  <div> address</div>
+  <div class="outer-office-address-div">
+    <div class="inner-office-address-div">
+      <div class="office-title">
+        Office 1:
+      </div>
+      <div class="address-detail">
+        <div>SHREE APARTMENT, NEHRU GARDEN, LOKRUCHINAGAR, RAHATA, DIST. AHMEDNAGAR-423107,</div>
+        <div><b>Ph No.</b> 9810113459</div>
+        <div><b>Email: </b>m_rahane@yahoo.com</div>
+      </div>
+    </div>
+
+    <div class="inner-office-address-div">
+      <div class="office-title">
+        Office 2:
+      </div>
+      <div class="address-detail">
+        <div>4311, STREET NO. 9, AJITNAGAR, GANDHINAGAR, DELHI-110031,</div>
+        <div><b>Ph No.</b> 7827802939</div>
+        <div><b>Email: </b>m_rahane@yahoo.com</div>
+      </div>
+    </div>
+
+     
+      
+  </div>
 </div>
 
   </body>
@@ -208,5 +235,22 @@ const product_observer = new IntersectionObserver((entries) => {
 
 const product_hiddenElements = document.querySelectorAll('.product-item1-div-hidden');
 product_hiddenElements.forEach((el) => product_observer.observe(el));
+
+//Scrolling animation for Contact us Section
+const contactus_observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('contact-us-div-show');
+        }
+        else
+        {
+            entry.target.classList.remove('contact-us-div-show');
+        }
+    });
+});
+
+const contactus_hiddenElements = document.querySelectorAll('.contact-us-div-hidden');
+contactus_hiddenElements.forEach((el) => contactus_observer.observe(el));
+
    </script> 
 </html>
