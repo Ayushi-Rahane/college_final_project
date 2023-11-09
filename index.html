@@ -55,12 +55,12 @@
 <!--Service section-->
 <div>
       <div class="title-div">
-      <h1 class="title">Services</h1>
+      <h1 class="title-hidden">Services</h1>
       </div>
         <div class="service-item-outer-div">
             <div class="service-item-inner-div">
             <div>
-              <img class="service-img" src="services/service1.jpeg">
+              <img class="service-img-hidden" src="services/service1.jpeg">
             </div>
             <div><p class="service-name">ATC Ball Bearing Spindle</p></div>
             <div class="service-info-div"><p class="service-info">
@@ -68,14 +68,14 @@
             </div>
             <div class="service-item-inner-div">
               <div>
-                <img class="service-img" src="services/service2.jpeg">
+                <img class="service-img-hidden" src="services/service2.jpeg">
               </div>
               <div><p class="service-name">Air Bearing Spindle</p></div>
               <div class="service-info-div"><p class="service-info">Westwind air bearing spindles excel in high-speed, precision, and oil-free applications worldwide, outperforming conventional bearings for increased productivity and quality.</p></div>
             </div>
             <div class="service-item-inner-div"> 
               <div>
-                <img class="service-img" src="services/service3.png">
+                <img class="service-img-hidden" src="services/service3.png">
               </div>
               <div><p class="service-name">MTC Water Cooled Routing Spindle</p></div>
               <div class="service-info-div"><p class="service-info">
@@ -90,7 +90,7 @@
 <!--Product section-->
 <div>
   <div class="title-div">
-    <h1 class="title">Products</h1>
+    <h1 class="title-hidden">Products</h1>
     </div>
   <div class="product-item-div">
     <div class="product-item1-div">
@@ -146,6 +146,39 @@
     setInterval(function () {
     chg_img(1);
   },5000);
+
+  //Scrolling Animation for services image
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('service-img-show');
+        }
+        else
+        {
+            entry.target.classList.remove('service-img-show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.service-img-hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+//Scrolling Animation for Title
+ 
+  const Titleobserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('title-show');
+        }
+        else
+        {
+            entry.target.classList.remove('title-show');
+        }
+    });
+});
+
+const Title_hiddenElements = document.querySelectorAll('.title-hidden');
+Title_hiddenElements.forEach((el) => Titleobserver.observe(el));
 
    </script> 
 </html>
