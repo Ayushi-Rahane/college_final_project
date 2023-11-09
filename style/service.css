@@ -6,19 +6,26 @@
     justify-content: center;
       align-items: center;
 }
-.service-img-hidden{
+.service-item-inner-div-hidden{
     opacity:0;
-            filter:blur(5px);
-            transform:translateX(-100%);
-            transition:all 2s;
+    filter:blur(5px);
+    transform:translateY(0%);
+    transition:all 2s;
+}
+
+.service-item-inner-div-show{
+    opacity:1;
+    filter:blur(0);
+    transform: translateY(15px);
+
+}
+.service-img{
+    
     width:300px;
     margin:20px;
 }
-.service-img-show{
-    opacity:1;
-    filter:blur(0);
-    transform: translateX(0);
-}
+
+
 .service-name{
     text-align:center;
     color:#424874;

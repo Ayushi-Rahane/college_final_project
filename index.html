@@ -58,24 +58,24 @@
       <h1 class="title-hidden">Services</h1>
       </div>
         <div class="service-item-outer-div">
-            <div class="service-item-inner-div">
+            <div class="service-item-inner-div-hidden">
             <div>
-              <img class="service-img-hidden" src="services/service1.jpeg">
+              <img class="service-img" src="services/service1.jpeg">
             </div>
             <div><p class="service-name">ATC Ball Bearing Spindle</p></div>
             <div class="service-info-div"><p class="service-info">
               The high-speed ball bearing spindle with a 60,000 RPM max speed is used in the PCB industry for routing and drilling machines. It boasts a compact, lightweight design, low inertia, minimal vibration, and low noise, ensuring high-speed, high-precision, and stable routing processes.</p></div>
             </div>
-            <div class="service-item-inner-div">
+            <div class="service-item-inner-div-hidden">
               <div>
-                <img class="service-img-hidden" src="services/service2.jpeg">
+                <img class="service-img" src="services/service2.jpeg">
               </div>
               <div><p class="service-name">Air Bearing Spindle</p></div>
               <div class="service-info-div"><p class="service-info">Westwind air bearing spindles excel in high-speed, precision, and oil-free applications worldwide, outperforming conventional bearings for increased productivity and quality.</p></div>
             </div>
-            <div class="service-item-inner-div"> 
+            <div class="service-item-inner-div-hidden"> 
               <div>
-                <img class="service-img-hidden" src="services/service3.png">
+                <img class="service-img" src="services/service3.png">
               </div>
               <div><p class="service-name">MTC Water Cooled Routing Spindle</p></div>
               <div class="service-info-div"><p class="service-info">
@@ -93,7 +93,7 @@
     <h1 class="title-hidden">Products</h1>
     </div>
   <div class="product-item-div">
-    <div class="product-item1-div">
+    <div class="product-item1-div-hidden">
        <div>
         <img class="product-img" src="products/product1.png">
        </div>
@@ -107,7 +107,7 @@
         </div>
        </div>
      </div>
-     <div class="product-item1-div">
+     <div class="product-item1-div-hidden">
       <div>
        <img class="product-img" src="products/product3.png">
       </div>
@@ -151,16 +151,16 @@
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting){
-            entry.target.classList.add('service-img-show');
+            entry.target.classList.add('service-item-inner-div-show');
         }
         else
         {
-            entry.target.classList.remove('service-img-show');
+            entry.target.classList.remove('service-item-inner-div-show');
         }
     });
 });
 
-const hiddenElements = document.querySelectorAll('.service-img-hidden');
+const hiddenElements = document.querySelectorAll('.service-item-inner-div-hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 //Scrolling Animation for Title
@@ -180,5 +180,20 @@ hiddenElements.forEach((el) => observer.observe(el));
 const Title_hiddenElements = document.querySelectorAll('.title-hidden');
 Title_hiddenElements.forEach((el) => Titleobserver.observe(el));
 
+//Scrolling animation for product
+const product_observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('product-item1-div-show');
+        }
+        else
+        {
+            entry.target.classList.remove('product-item1-div-show');
+        }
+    });
+});
+
+const product_hiddenElements = document.querySelectorAll('.product-item1-div-hidden');
+product_hiddenElements.forEach((el) => product_observer.observe(el));
    </script> 
 </html>
