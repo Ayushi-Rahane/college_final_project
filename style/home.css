@@ -1,4 +1,5 @@
 .home-outer-div{
+   margin-top:180px;
     background-color:DCD6F7;
     display:flex;
     justify-content:center;
@@ -21,7 +22,7 @@
 }
 .right-arrow-btn, .left-arrow-btn{
     position:absolute;
-    top:314px;
+    top:426px;
     background-color:transparent;
     border:none;
 }
@@ -58,7 +59,7 @@
     width:321px;
 }
 .right-arrow-btn, .left-arrow-btn{
-    top:199px;
+    top:299px;
 }
 .right-arrow-btn{
     right:5px;
