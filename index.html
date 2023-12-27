@@ -29,7 +29,7 @@
          <a href="xyz" class="contact-us-link">contact us</a>
         </div>
        </div>
-         <nav>
+         <div class="nav">
              <div class="left-div">
         <a href="xyz"> <img class="logo-img" src="cnc-logo.png"></a>  
              </div>
@@ -74,7 +74,7 @@
              </ul>
         
         
-           </nav>
+            </div>
   
     </div>
     
@@ -200,10 +200,11 @@
 </div>
 
 <!--About us section-->
-<div class="title-div">
-  <h1 class="title-hidden">About Us</h1>
-  </div>
+
 <div class="about-us">
+  <div class="title-div">
+    <h1 class="title-hidden" style="color:aliceblue">About Us</h1>
+    </div>
   <div class="about-us-header">Concept N Controls</div>
   <div class="about-us-contact">
 
@@ -328,6 +329,27 @@ const contactus_observer = new IntersectionObserver((entries) => {
 
 const contactus_hiddenElements = document.querySelectorAll('.contact-us-div-hidden');
 contactus_hiddenElements.forEach((el) => contactus_observer.observe(el));
+
+//Hiding Header while Scrolling
+
+{
+        const header = document.querySelector(".header");
+        const nav = document.querySelector(".nav");
+        let lastScrollY = window.scrollY;
+        window.addEventListener("scroll",() => {
+            if(lastScrollY < window.scrollY){
+                header.classList.add("header-hidden");
+                nav.classList.add("nav-after-scroll");
+            }
+            else{
+                header.classList.remove("header-hidden");
+                nav.classList.remove("nav-after-scroll");
+            }
+            lastScrollY = window.scrollY;
+        });
+    }
+
+    
 
    </script> 
 </html>
