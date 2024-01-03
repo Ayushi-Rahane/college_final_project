@@ -1,0 +1,104 @@
+.sub-title-div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0px;
+    font-size:2em;
+    font-family:  'Alegreya', serif;
+
+}
+
+.sub-title{
+    border-bottom: 6px double #000;
+}
+.sub-text{
+    font-size: 28px;
+    margin-left: 63px;
+}
+
+.service-item-div{
+    display:grid;
+    grid-template-rows: 400px 400px;
+    grid-gap:100px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.service-item1-div-hidden{
+    display:grid;
+    grid-template-columns:400px 600px;
+    background-color:azure;
+    border-radius:2em;
+    opacity:0;
+            filter:blur(5px);
+            transform:translateX(-100%);
+            transition:all 2s;
+}
+.service-item1-div-show{
+    opacity:1;
+    filter:blur(0);
+    transform: translateX(0);
+}
+
+.service-img-div{
+    width:400px;
+    margin-left:150px;
+}
+.service-img{
+    width:400px;
+}
+
+.service-title-div{
+   margin-top:42px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.service-title{
+    text-align:center;
+    color:#424874;
+    font-weight:600;
+    font-size:2em;
+    font-style: 'Inclusive Sans', sans-serif;
+}
+.service-info-div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:83px;
+    text-align:left;
+    color:darkcyan;
+    font-style: 'Inclusive Sans', sans-serif;
+}
+
+@media screen and (min-width: 350px) and (max-width: 767px) {
+    .service-item-div{
+        grid-template-rows: 400px 500px;
+    }
+    .service-item1-div-hidden{
+        grid-template-columns:100px 300px;
+        justify-content: center;
+        align-items: center;
+        opacity:0;
+        filter:blur(5px);
+        transform:translateX(-100%);
+        transition:all 2s;
+    }
+    .service-item1-div-show{
+        opacity:1;
+        filter:blur(0);
+        transform: translateX(0);
+    }
+    .service-title{
+        font-size:20px;
+     margin-right:70px;
+     margin-bottom:60px;
+    }
+    .service-img{
+        width:170px;
+    }
+    .service-info-div{
+        text-align:center;
+    }
+}

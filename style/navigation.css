@@ -168,11 +168,17 @@ color:#424874;
 font-family:'Inclusive Sans', sans-serif;
 transition: all 1s;
 }
+
+.service-list-link:visited{
+  color:inherit;
+}
 .service-list:hover{
   color:#DCD6F7;
   background-color:#424874;
  transform:translateX(10px);
 }
+
+
 .product-drop-down-menu{
   position:absolute;
   list-style-type: none;
@@ -236,7 +242,7 @@ transition: all 1s;
   .menu-ul {
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 50%;
     background: #424874;
     top: 82px;
     left: -400%;
@@ -245,6 +251,7 @@ transition: all 1s;
     flex-direction: column;
     transition: all 0.5s;
     z-index: 200;
+    margin:0px;
   }
 
   .menu-item {
@@ -260,6 +267,7 @@ transition: all 1s;
   .menu-item:hover {
     background-color: #F4EEFF;
     color: #424874;
+    transition: all 0.5s;
   }
 
   #check:checked ~ .menu-ul {
@@ -268,12 +276,13 @@ transition: all 1s;
   }
 
   .service-drop-down-menu{
-    top:270px;
+    top:9.5em;
     left:52px;
-  width:297px;
+    width:297px;
+
   }
   .product-drop-down-menu{
-    top:420px;
+    top:14.5em;
     left:52px;
     width:297px;
   }
