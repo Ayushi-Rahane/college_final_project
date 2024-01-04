@@ -145,8 +145,7 @@ body {
 
 .service-drop-down-menu{
   position:absolute;
-  list-style-type: none;
-  
+  list-style-type: none;  
   border-radius:12px;
 padding:0px;
 top:55px;
@@ -168,10 +167,17 @@ color:#424874;
 font-family:'Inclusive Sans', sans-serif;
 transition: all 1s;
 }
+.special-link{
+  color:#424874;
+}
 
+.special-link:hover{
+  color:#DCD6F7;
+}
+/*
 .service-list-link:visited{
   color:inherit;
-}
+}*/
 .service-list:hover{
   color:#DCD6F7;
   background-color:#424874;
