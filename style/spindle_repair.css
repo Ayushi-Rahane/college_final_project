@@ -102,7 +102,9 @@
     color:darkcyan;
     font-style: 'Inclusive Sans', sans-serif;
 }
-
+.item-list-parent-div{
+    grid-template-rows: 400px;
+}
 .item-list-div{
     font-family:'Alegreya', serif;
     line-height:52px;
