@@ -91,7 +91,7 @@ entries.forEach((entry) => {
 const contactus_hiddenElements = document.querySelectorAll('.contact-us-div-hidden');
 contactus_hiddenElements.forEach((el) => contactus_observer.observe(el));
 
-//Scrooling animation for Spindle Repair page
+//Scrooling animation for Spindle Repair page -Service Title
 const spindle_repair_observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting){
@@ -105,6 +105,40 @@ const spindle_repair_observer = new IntersectionObserver((entries) => {
     });
     const spindle_repair_hiddenElements = document.querySelectorAll('.service-item1-div-hidden');
     spindle_repair_hiddenElements.forEach((el) => spindle_repair_observer.observe(el));
+
+//Scrooling animation for Spindle Repair page -Service SUBTitle
+const spindle_repair_sub_title_observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('sub-title-show');
+        }
+        else
+        {
+            entry.target.classList.remove('sub-title-show');
+        }
+    });
+    });
+    const spindle_repair_sub_title_hiddenElements = document.querySelectorAll('.sub-title-hidden');
+    spindle_repair_sub_title_hiddenElements.forEach((el) => spindle_repair_sub_title_observer.observe(el));
+
+  //Scrooling animation for Spindle Repair page -Service next div
+  const service_item2_div_observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('service-item2-div-show');
+        }
+        else
+        {
+            entry.target.classList.remove('service-item2-div-show');
+        }
+    });
+    });
+    const service_item2_div_hiddenElements = document.querySelectorAll('.service-item2-div-hidden');
+    service_item2_div_hiddenElements.forEach((el) => service_item2_div_observer.observe(el));
+
+  
+  
+
 //Hiding Header while Scrolling
 
 {
