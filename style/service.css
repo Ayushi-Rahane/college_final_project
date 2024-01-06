@@ -1,8 +1,8 @@
 
 .service-item-outer-div{
     display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-gap:3px;
+    grid-template-columns:400px 400px 400px;
+    grid-gap:3em;
     justify-content: center;
       align-items: center;
 }
@@ -18,6 +18,10 @@
     filter:blur(0);
     transform: translateY(15px);
 
+}
+
+.service-item-inner-div-show:hover{
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 .service-img{
     

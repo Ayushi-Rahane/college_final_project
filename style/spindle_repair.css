@@ -9,11 +9,14 @@
 }
 
 .sub-title{
-    border-bottom: 6px double #000;
+    border-bottom: 6px double #424874;
+    color:#424874;
+    
 }
 .sub-text{
     font-size: 28px;
     margin-left: 63px;
+   color:#424874
 }
 
 .service-item-div{
@@ -39,6 +42,9 @@
     opacity:1;
     filter:blur(0);
     transform: translateX(0);
+}
+.service-item1-div-show:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .service-img-div{

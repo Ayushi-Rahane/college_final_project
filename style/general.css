@@ -28,6 +28,7 @@ a{
     display:flex;
     justify-content:center;
     align-items:center;
+    
 }
 
 .enquiry-link{
@@ -37,5 +38,14 @@ a{
     background-color:#424874;
     color:aliceblue;
     margin-bottom:122px;
+    
+}
 
+.enquiry-link:hover{    
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor:pointer;
+}
+
+.enquiry-link:active{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
