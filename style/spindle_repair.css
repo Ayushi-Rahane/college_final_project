@@ -109,12 +109,22 @@
     font-family:'Alegreya', serif;
     line-height:52px;
    margin-left:10em;
+   color:darkcyan;
+   font-weight:600;
+}
+.item-list-div-hidden{
+    display:flex;
+    justify-content:right;
 }
 .cnc_mbm_img{
     width:100%;
     height:500px;
 }
-
+.MPM2-img{
+    width:470px;   
+    height:500px; 
+    margin-left:326px;
+}
 .cnc_mpm_img{
     width:100%;
     height:600px;
