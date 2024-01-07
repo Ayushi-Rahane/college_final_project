@@ -137,7 +137,21 @@ const spindle_repair_sub_title_observer = new IntersectionObserver((entries) => 
     service_item2_div_hiddenElements.forEach((el) => service_item2_div_observer.observe(el));
 
   
-  
+//Scrolling animation for Item List CNC-MPM
+const item_list_div_observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('item-list-div-show');
+        }
+        else
+        {
+            entry.target.classList.remove('item-list-div-show');
+        }
+    });
+    });
+    const item_list_div_hiddenElements = document.querySelectorAll('.item-list-div-hidden');
+    item_list_div_hiddenElements.forEach((el) => item_list_div_observer.observe(el));
+
 
 //Hiding Header while Scrolling
 

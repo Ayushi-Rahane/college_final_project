@@ -115,7 +115,16 @@
 .item-list-div-hidden{
     display:flex;
     justify-content:right;
+    filter:blur(5px);
+    transform:translateX(-100%);
+    transition:all 2s;
 }
+.item-list-div-show{
+opacity:1;
+filter:blur(0);
+transform: translateX(0);
+}
+
 .cnc_mbm_img{
     width:100%;
     height:500px;
@@ -169,4 +178,32 @@
     margin-left:0px;
     width:155px;
  }
+
+ .sub-title-2{
+    font-size:23px;
+ }
+ .cnc_mpm_img{
+    height:260px;
+ }
+ .item-list-parent-div{
+    grid-template-rows: 400px;
+}
+ .item-list-div-hidden{
+    flex-direction:column;
+ }
+ .item-list-div{
+    margin-left:100px;
+ }
+ .item-list-div2{
+    margin:0px;
+ }
+ .MPM2-img {
+    width:100%;   
+    height:500px; 
+    margin-left:0px;
+}
+.cnc_mbm_img{
+    width:100%;
+    height:20em;
+}
 }
