@@ -153,6 +153,28 @@ transform: translateX(0);
     margin: auto;
 }
 
+/*Styleing for product page*/
+
+.product-img{
+    width:100%;
+   margin-top:103px;
+}
+.spindle-img{
+        width:100%;
+   margin-top:80px;
+   mix-blend-mode:multiply;
+}
+.product-sub-text{
+    font-size: 42px;
+    font-weight:700;
+    margin-left: 63px;
+   color:#424874;
+   transition:all 2s;
+}
+
+
+
+
 
 @media screen and (min-width: 350px) and (max-width: 767px) {
   
