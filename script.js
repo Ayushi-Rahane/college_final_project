@@ -173,4 +173,22 @@ const item_list_div_observer = new IntersectionObserver((entries) => {
 }
 
 
+//Take message upto 250 words in equiry form
 
+document.addEventListener('DOMContentLoaded', function () {
+    var textarea = document.getElementById('myTextarea');
+  
+    var maxWords = 250;
+
+    textarea.addEventListener('input', function () {
+        var words = textarea.value.trim().split(/\s+/).length;
+       
+
+        // Check if the word limit is exceeded
+        if (words > maxWords) {
+            textarea.setCustomValidity('250 Words limit exceeded!');
+        } else {
+            textarea.setCustomValidity('');
+        }
+    });
+});
