@@ -9,7 +9,7 @@
 
 .product-item1-div-hidden{
     display:grid;
-    grid-template-columns:400px 600px;
+    grid-template-columns:400px 400px;
     background-color:azure;
     border-radius:2em;
     opacity:0;
@@ -58,7 +58,7 @@
         grid-template-rows: 400px 500px;
     }
     .product-item1-div-hidden{
-        grid-template-columns:50px 300px;
+        grid-template-columns:500px 300px;
         justify-content: center;
         align-items: center;
         opacity:0;
