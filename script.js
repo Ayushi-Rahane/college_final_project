@@ -76,20 +76,18 @@ const product_hiddenElements = document.querySelectorAll('.product-item1-div-hid
 product_hiddenElements.forEach((el) => product_observer.observe(el));
 
 //Scrolling animation for Contact us Section
-const contactus_observer = new IntersectionObserver((entries) => {
-entries.forEach((entry) => {
-    if(entry.isIntersecting){
-        entry.target.classList.add('contact-us-div-show');
+const contact_us_observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('contact_us-item1-div-show');
+    } else {
+      entry.target.classList.remove('contact_us-item1-div-show');
     }
-    else
-    {
-        entry.target.classList.remove('contact-us-div-show');
-    }
-});
+  });
 });
 
-const contactus_hiddenElements = document.querySelectorAll('.contact-us-div-hidden');
-contactus_hiddenElements.forEach((el) => contactus_observer.observe(el));
+const contact_us_hiddenElements = document.querySelectorAll('.contact_us-item1-div-hidden');
+contact_us_hiddenElements.forEach((el) => contact_us_observer.observe(el));
 
 //Scrooling animation for Spindle Repair page -Service Title
 const spindle_repair_observer = new IntersectionObserver((entries) => {

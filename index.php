@@ -47,7 +47,7 @@
     </div>
     <div class="nav">
       <div class="left-div">
-        <a href="index.html"> <img class="logo-img" src="cnc-logo.png"></a>
+        <a href="index.php"> <img class="logo-img" src="cnc-logo.png"></a>
       </div>
 
       <div class="mid-div">
@@ -62,7 +62,7 @@
 
 
       <ul class="menu-ul">
-        <li><a class="menu-item">Home</a></li>
+        <li><a href="index.php" class="menu-item">Home</a></li>
         <li class="services">
           <a class="menu-item">Our Services</a>
           <ul class="service-drop-down-menu">
@@ -85,7 +85,7 @@
         <li class="products">
           <a class="menu-item">Our Products</a>
           <ul class="product-drop-down-menu">
-            <li class="product-list"><a class="special-link" href="products/cnc_drilling_and_routing_machine.html">CNC
+            <li class="product-list"><a class="special-link" href="products\cnc_drilling_and_routing_machine.html">CNC
                 Drilling and Routing Machine</a></li>
             <li class="product-list"><a class="special-link" href="products/spindles.html">Spindles</a></li>
 
@@ -177,7 +177,7 @@
 
     <?php 
 
-    $sql="SELECT * FROM `products` LIMIT 2";
+    $sql="SELECT * FROM `products`";
     $res=mysqli_query($conn,$sql);
 
     if($res)
@@ -185,8 +185,8 @@
       while($r=mysqli_fetch_assoc($res))
       {
         echo '
-            <div class="product-item1-div-hidden" style="margin:auto; width:90%;">
-            <div>
+            <div class="product-item1-div-hidden">
+            <div class="product-img-div">
               <img class="product-img" style="mix-blend-mode:multiply" src="./uploads/products/images/'. $r["product_image"] .'">
             </div>
             <div>
@@ -211,48 +211,47 @@
       }
 
     ?>
-  
+    </div>
+  </div>
 
     <!--Contact us Section-->
     <div id="contact-us" class="contact_us">
-      <div class="title-div">
-        <h1 class="title-hidden">Contact Us</h1>
-      </div>
-      <div class="contact-us-div1"  style="
-    display: grid;
-    align-items: center;
-    justify-content: center;
-">
-      <div class="social-media-logo-div">
-    <a href="https://wa.me/qr/RPTMSTH4SLSCP1" class="special-link-logo"><i  class="fa-brands fa-whatsapp"></i></a>
-    <span class="mid-logo"><a class="special-link-logo" href="https://www.linkedin.com/in/concept-n-controls-b3bb35283"><i class="fa-brands fa-linkedin-in"></i> </a></span>
-    <a href="mailto:m_rahane@yahoo.com" class="special-link-logo"><i class="fa-solid fa-envelope"></i></a>
+  <div class="title-div">
+    <h1 class="title-hidden">Contact Us</h1>
   </div>
-  <div class="outer-office-address-div">
-    <div class="inner-office-address-div">
-      <div class="office-title">
-        Office 1:
-      </div>
-      <div class="address-detail">
-        <div>SHREE APARTMENT, NEHRU GARDEN, LOKRUCHINAGAR, RAHATA, DIST. AHMEDNAGAR-423107,</div>
-        <div><b>Ph No.</b> 9810113459</div>
-        <div><b>Email: </b>m_rahane@yahoo.com</div>
-      </div>
+  <div class="contact_us-item1-div-hidden">
+    <div class="social-media-logo-div">
+      <a href="https://wa.me/qr/RPTMSTH4SLSCP1" class="special-link-logo"><i class="fa-brands fa-whatsapp"></i></a>
+      <span class="mid-logo"><a class="special-link-logo" href="https://www.linkedin.com/in/concept-n-controls-b3bb35283"><i class="fa-brands fa-linkedin-in"></i></a></span>
+      <a href="mailto:m_rahane@yahoo.com" class="special-link-logo"><i class="fa-solid fa-envelope"></i></a>
     </div>
+    <div class="outer-office-address-div">
+      <div class="inner-office-address-div">
+        <div class="office-title">
+          Office 1:
+        </div>
+        <div class="address-detail">
+          <div>SHREE APARTMENT, NEHRU GARDEN, LOKRUCHINAGAR, RAHATA, DIST. AHMEDNAGAR-423107,</div>
+          <div><b>Ph No.</b> 9810113459</div>
+          <div><b>Email:</b> m_rahane@yahoo.com</div>
+        </div>
+      </div>
 
-    <div class="inner-office-address-div">
-      <div class="office-title">
-        Office 2:
-      </div>
-      <div class="address-detail">
-        <div>4311, STREET NO. 9, AJITNAGAR, GANDHINAGAR, DELHI-110031,</div>
-        <div><b>Ph No.</b> 7827802939</div>
-        <div><b>Email: </b>m_rahane@yahoo.com</div>
+      <div class="inner-office-address-div">
+        <div class="office-title">
+          Office 2:
+        </div>
+        <div class="address-detail">
+          <div>4311, STREET NO. 9, AJITNAGAR, GANDHINAGAR, DELHI-110031,</div>
+          <div><b>Ph No.</b> 7827802939</div>
+          <div><b>Email:</b> m_rahane@yahoo.com</div>
+        </div>
       </div>
     </div>
   </div>
-      </div>  
-    </div>
+   </div>
+
+
 
     <!--About us section-->
 
