@@ -113,7 +113,7 @@ else
                         <i class="fa fa-chart-area fa-3x text-primary"></i>
                         <div class="ms-3">
                             <p class="mb-2">All Contacts</p>
-                            <?php
+                         <?php
 
                             $sql4 = "SELECT * FROM `contacts`";
                             $res4 = mysqli_query($conn, $sql4);

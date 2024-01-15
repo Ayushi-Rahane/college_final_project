@@ -26,7 +26,7 @@ $currentPage = $_SERVER['REQUEST_URI'];
             <a href="../dashboard/" class="nav-item nav-link"><i
                     class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
             <a href="../products/" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Products</a>
-            <a href="../contact/" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Contacts</a>
+            <!--a href="../contact/" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Contacts</a-->
             <!-- <a href="../admin-add/" class="nav-item nav-link "><i class="fa fa-chart-bar me-2"></i>Admin</a> -->
         </div>
     </nav>
@@ -113,7 +113,7 @@ $currentPage = $_SERVER['REQUEST_URI'];
             </div>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                    <img class="rounded-circle me-lg-2" src="../img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                    <img class="rounded-circle me-lg-2" src="../../cnc-logo.png" alt="" style="width: 40px; height: 40px;">
                     <span class="d-none d-lg-inline-flex">Concept N Control</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
